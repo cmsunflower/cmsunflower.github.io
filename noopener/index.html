@@ -11,6 +11,11 @@
   
   <title>
     
+      noopener和noreferrer 
+      
+      
+      |
+    
      cmsunflower
   </title>
 
@@ -87,43 +92,147 @@
 
 
       <div class="flex-container">
-        <div class="container index">
-  <div class="post-list">
-    <!-- 遍历渲染文章 -->
-    
-      <div class="post-item" title="noopener和noreferrer">
-        <div class="time-m-d">2021-01-12</div>
-        <div class="title">
-          <a href="/noopener/">
-            
-              
-                <span>noopener和noreferrer</span>
-              
-            
-          </a>
-        </div>
+        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
+<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
+
+<!-- LaTex Display -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
+
+
+
+  
+
+  
+
+  
+
+  
+  <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
+  <div class="container post-details" id="post-details">
+    <div class="post-content">
+      <div class="post-title">noopener和noreferrer</div>
+      <div class="post-attach">
+        <span class="post-pubtime">
+          <i class="iconfont icon-updatetime" title="更新时间"></i>
+          2021-01-12 19:11:54
+        </span>
+        
+              <span class="post-tags">
+                <i class="iconfont icon-tags" title="标签"></i>
+                
+                <span class="span--tag">
+                  <a href="/tags/html-%E7%BD%91%E7%AB%99%E5%AE%89%E5%85%A8/" title="html,网站安全">
+                    <b>#</b> html,网站安全
+                  </a>
+                </span>
+                
+              </span>
+          
       </div>
-    
-      <div class="post-item" title="本地测试npm包">
-        <div class="time-m-d">2021-01-11</div>
-        <div class="title">
-          <a href="/hello/">
+      <div class="markdown-body">
+        <h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><p>打开其他的网页时候，<code>a</code>链接设置了<code>target=&quot;_blank&quot;</code>，可能有安全风险</p>
+<ol>
+<li><p>影响页面性能，如果打开的网页和当前页面处于同一域名下(打开同一进程)，新的页面如果加载的<code>javascript</code>比较大，影响当前页面</p>
+</li>
+<li><p>存在安全风险，打开的新页面可以使用<code>window.opener</code>，可能重定向到新的URL</p>
+</li>
+</ol>
+<h3 id="noopener、noreferrer什么意思"><a href="#noopener、noreferrer什么意思" class="headerlink" title="noopener、noreferrer什么意思"></a>noopener、noreferrer什么意思</h3><ol>
+<li><code>noopener</code>阻止用户使用<code>window.opener</code>操作window对象，重定向到新的页面</li>
+<li><code>noreferrer</code>阻止用户在请求头中发送<code>referrer</code>信息</li>
+</ol>
+<h3 id="参考地址"><a href="#参考地址" class="headerlink" title="参考地址"></a>参考地址</h3><p>[1]:<a target="_blank" rel="noopener" href="https://web.dev/external-anchors-use-rel-noopener/">Links to cross-origin destinations are unsafe</a><br>[2]:<a target="_blank" rel="noopener" href="https://juejin.cn/post/6844904116892745735">rel=’noopener noreferrer’ 知多少</a></p>
+
+      </div>
+      
+        <div class="prev-or-next">
+          <div class="post-foot-next">
             
-              
-                <span>本地测试npm包</span>
-              
+              <a href="/hello/" target="_self">
+                <i class="iconfont icon-chevronleft"></i>
+                <span>上一页</span>
+              </a>
             
-          </a>
+          </div>
+          <div class="post-attach">
+            <!-- <span class="post-pubtime">
+              <i class="iconfont icon-updatetime" title="更新时间"></i>
+              2021-01-12 19:11:54
+            </span> -->
+            
+                  <span class="post-tags">
+                    <i class="iconfont icon-tags" title="标签"></i>
+                    
+                    <span class="span--tag">
+                      <a href="/tags/html-%E7%BD%91%E7%AB%99%E5%AE%89%E5%85%A8/" title="html,网站安全">
+                        <b>#</b> html,网站安全
+                      </a>
+                    </span>
+                    
+                  </span>
+              
+          </div>
+          <div class="post-foot-prev">
+            
+          </div>
         </div>
+      
+    </div>
+    
+  <div class="post-catalog" id="catalog">
+    <div class="title">目录</div>
+    <div class="catalog-content">
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%97%AE%E9%A2%98"><span class="toc-text">问题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#noopener%E3%80%81noreferrer%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D"><span class="toc-text">noopener、noreferrer什么意思</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E5%9C%B0%E5%9D%80"><span class="toc-text">参考地址</span></a></li></ol>
+    </div>
+  </div>
+
+  
+<script src="/js/catalog.js"></script>
+
+
+
+
+    
+      <div class="comments-container">
+        
+
+
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+  <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+  <div id="gitalk-container"></div>
+
+  <script>
+    const gitalk = new Gitalk({
+      clientID: '',
+      clientSecret: '',
+      repo: '',
+      owner: '',
+      admin: [''],
+      id: location.pathname,
+      distractionFreeMode: false
+    })
+
+    gitalk.render('gitalk-container')
+  </script>
+
+
       </div>
     
   </div>
-  <nav class="post-navigation">
-    
-    <span class="page-num">1 / 1</span>
-    
-  </nav>
-</div>
+
 
         <div class="footer">
   <div class="social">

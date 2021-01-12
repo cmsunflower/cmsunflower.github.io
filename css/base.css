@@ -59,7 +59,7 @@ a:hover {
 }
 
 .header {
-  padding: 50px 0;
+  padding: 30px 0;
 }
 
 .container {
@@ -118,6 +118,9 @@ a:hover {
   font-size: 1.6rem;
   margin-bottom: 20px;
   align-items: center;
+}
+.post-item:hover .time-m-d,.post-item:hover>.title a{
+  color: rgb(238,131,58);
 }
 
 .post-item .time-m-d {

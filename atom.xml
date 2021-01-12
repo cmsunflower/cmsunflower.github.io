@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-01-09T10:05:01.800Z</updated>
+  <updated>2021-01-12T03:24:28.312Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>noopener和noreferrer</title>
+    <link href="http://example.com/noopener/"/>
+    <id>http://example.com/noopener/</id>
+    <published>2021-01-12T11:11:54.000Z</published>
+    <updated>2021-01-12T03:24:28.312Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><p>打开其他的网页时候，<code>a</code>链接设置了<code>target=&quot;_blank&quot;</code>，可能有安全风险</p><ol><li><p>影响页面性能，如果打开的网页和当前页面处于同一域名下(打开同一进程)，新的页面如果加载的<code>javascript</code>比较大，影响当前页面</p></li><li><p>存在安全风险，打开的新页面可以使用<code>window.opener</code>，可能重定向到新的URL</p></li></ol><h3 id="noopener、noreferrer什么意思"><a href="#noopener、noreferrer什么意思" class="headerlink" title="noopener、noreferrer什么意思"></a>noopener、noreferrer什么意思</h3><ol><li><code>noopener</code>阻止用户使用<code>window.opener</code>操作window对象，重定向到新的页面</li><li><code>noreferrer</code>阻止用户在请求头中发送<code>referrer</code>信息</li></ol><h3 id="参考地址"><a href="#参考地址" class="headerlink" title="参考地址"></a>参考地址</h3><p>[1]:<a href="https://web.dev/external-anchors-use-rel-noopener/">Links to cross-origin destinations are unsafe</a><br>[2]:<a href="https://juejin.cn/post/6844904116892745735">rel=’noopener noreferrer’ 知多少</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;问题&quot;&gt;&lt;a href=&quot;#问题&quot; class=&quot;headerlink&quot; title=&quot;问题&quot;&gt;&lt;/a&gt;问题&lt;/h3&gt;&lt;p&gt;打开其他的网页时候，&lt;code&gt;a&lt;/code&gt;链接设置了&lt;code&gt;target=&amp;quot;_blank&amp;quot;&lt;/code&gt;，可能</summary>
+      
+    
+    
+    
+    
+    <category term="html,网站安全" scheme="http://example.com/tags/html-%E7%BD%91%E7%AB%99%E5%AE%89%E5%85%A8/"/>
+    
+  </entry>
+  
+  <entry>
     <title>本地测试npm包</title>
     <link href="http://example.com/hello/"/>
     <id>http://example.com/hello/</id>
-    <published>2021-01-06T03:53:41.458Z</published>
-    <updated>2021-01-09T10:05:01.800Z</updated>
+    <published>2021-01-11T11:11:54.000Z</published>
+    <updated>2021-01-12T03:14:09.700Z</updated>
     
     <content type="html"><![CDATA[<p>测试<code>npm</code>包名： <code>test</code></p><h3 id="npm-link"><a href="#npm-link" class="headerlink" title="npm link"></a><code>npm link</code></h3><p>切换到需要调试的<code>npm</code>包(加入是<code>test</code>)，控制台<code>npm link</code><br>目的：<br>将这个npm包链接到global下的node_modules上</p><h3 id="npm-link-test"><a href="#npm-link-test" class="headerlink" title="npm link test"></a><code>npm link test</code></h3><p>切换需要使用test包的目录下，控制台输入<code>npm link test</code><br>就可以在自己的项目下，<code>node_modules</code>中看到这个包了<br>或<br>当前目录中使用：<code>npm link test</code>包的相对位置</p><h3 id="参考地址："><a href="#参考地址：" class="headerlink" title="参考地址："></a>参考地址：</h3><p>[1]: <a href="https://docs.npmjs.com/cli/v6/commands/npm-link">npm link</a><br>[2]: <a href="https://github.com/allenGKC/Blog/issues/13">如何在本地调试npm包</a></p>]]></content>
     
@@ -34,6 +56,8 @@
     
     
     
+    
+    <category term="node.js" scheme="http://example.com/tags/node-js/"/>
     
   </entry>
   
